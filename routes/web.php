@@ -26,3 +26,6 @@ Route::get('/name/{Bayu}', function ($name) {
 Route::get('/name/{Nama}/{nrp}', function ($name,$nrp) {
     return "Hello " . $name . " NRP anda ". $nrp;
 });
+Route::get('/person', 'PersonController@index');
+Route::get('/person/show/{param}', 'PersonController@show');
+Route::get('/student', 'StudentController');
